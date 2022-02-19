@@ -1,0 +1,726 @@
+*,h1,h2,h3,h4,h5,h6,p,ul,a {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*:before,
+*:after{
+	box-sizing: border-box;
+}
+
+
+
+a{
+	text-decoration: none;
+}
+[class*="__container"]{
+	min-width: 300px;
+	max-width: 1087px;
+	margin: 0px auto;
+	padding: 0 15;
+}
+@media (max-width: 1057px){
+	[class*="__container"]{
+		min-width: 970px;
+	}
+}
+@media (max-width: 992.98px){
+	[class*="__container"]{
+		min-width: 750px;
+	}
+}
+@media (max-width: 767.98px){
+	[class*="__container"]{
+		min-width: none;
+	}
+}
+.header{
+	background: url(images/mainbg.png) 0 0/100%;
+	position: absolute;
+	width: 100%;
+	height: 900px;
+	top: 0;
+	left: 0;
+	text-align: center;
+	background-size: cover;
+	background-position: center;
+}
+@media (max-width: 767px){
+	.header{
+		background-position: 0;
+	}
+}
+.header__logo{
+	width: 100%;
+	height: 100%;
+}
+.wrapper{
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.main{
+	flex: 1 1 auto;
+}
+.header__container{
+	display: flex;
+	min-height: 114px;
+	align-items: center;
+}
+.header__menu{
+	flex: 1 1 auto;
+	width: 100%;
+}
+.menu{
+	display: flex;
+	justify-content: flex-end;
+}
+.menu__list{
+	display: flex;
+	list-style: none;
+}
+.menu__link__home{
+	font-size: 16px;
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	letter-spacing: 1px;
+}
+.menu__link{
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	letter-spacing: 1px;
+}
+@media (max-width: 992.98px){
+	.header__container{
+		min-height: 80px;	
+	}
+	.menu__item{
+		margin: 0 30px 0 0;
+	}
+}
+.menu__item{
+	margin: 0 40px 0 0;
+}
+@media (max-width: 992.98px){
+	.text__kids{
+		left: -60px;
+	}
+
+	.kids__image{
+		background-size: 200px;
+		top: -10px;
+		left: -150px;
+	}
+	.star__youtube{
+		margin-left: -100px;
+		margin-top: 100px
+	}
+	.menu__link__home{
+		color: #F8251C;
+	}
+	.menu__item{
+		margin: 0 30px 0 0;	
+	}
+}
+@media (max-width: 768.98px){
+	.menu__link__home{
+		color: #F8251C;
+		font-size: 33px
+	}
+	.menu__body{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: url(images/mainbg);
+		padding: 80px 15px 30px 15px;
+	}
+	.menu__link{
+	color: #fff;
+	font-size: 33px;
+	}
+	.menu__list{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.menu__item{
+		margin: 0 0 70px 0;	
+	}
+}
+.menu__link:hover{
+	text-decoration: underline;
+}
+.menu__item:last-child{
+	margin-bottom: 0;
+} 
+.icon-menu{
+	display: none;
+}
+@media (max-width: 768.98px){
+	.text__kids{
+		left: -300px;
+	}
+	.kids__image{
+		display: none;
+	}
+.icon-menu{
+	display: none;
+	position: relative;
+	flex: 0 0 30px;
+	height: 18px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	}
+}
+.icon-menu::before,
+.icon-menu::after{
+	content: "";
+	background-color: #fff;
+	height: 2px;
+}
+.icon-menu span{
+	height: 2px;
+	background-color: #fff;
+}
+.kids__image{
+	background: url(images/staryoutube.png) 200px 300px no-repeat;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.text__kids{
+	position: absolute;
+	width: 470px;
+	height: 80px;
+	left: 200px;
+	top: 624px;
+	font-family: Proxima Soft;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 28px;
+	line-height: 40px;
+	display: flex;
+	align-items: center;
+	color: #EEECED;
+}
+.red__block__why{
+	position: absolute;
+	width: 1000px;
+	height: 63px;
+	left: -286px;
+	top: 970px;
+	background: #F8251C;
+	border-radius: 8px;
+}
+.block__why__text{
+	position: absolute;
+	width: 400px;
+	height: 52px;
+	left: 480px;
+	top: 5px;
+	font-family: Proxima Soft;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 33px;
+	line-height: 45px;
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+	color: #fff;
+}
+.statistic__youtube{
+	position: absolute;
+	background-image: url(images/statistic.png);
+	background-repeat: no-repeat;
+	top: 1100px;
+	left: 200px;
+	width: 590px;
+	height: 600px;
+}
+.boys__and__girls{
+	position: absolute;
+	background-image: url(images/girlandboy.png);
+	background-repeat: no-repeat;
+	top: 1100px;
+	left: 800px;
+	width: 500px;
+	height: 600px;
+}
+@media screen and(width: 1000px){
+	.boys__and__girls{
+		position: absolute;
+		top: 1800px;
+		left: 200px;
+		width: 300px;
+		height: 400px;
+	}
+}
+.big__logo__youtube{
+	background-image: url(images/biglogoyoutube.png);
+	position: absolute;
+	width: 550px;
+	height: 366px;
+	left: 210px;
+	top: 1600px;
+}
+.talant{
+	background-image: url(images/talant.png);
+	position: absolute;
+	width: 572px;
+	height: 180px;
+	left: 860px;
+	top: 1680px;
+}
+.button__logo{
+	position: absolute;
+	width: 241px;
+	height: 42px;
+	left: 870px;
+	top: 1940px;
+	background: #033373;
+	color: #fff;
+	font-family: Proxima Soft;
+	font-style: normal;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 26px;
+	border-radius: 30px;
+	padding-left: 50px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+.red__block__why__2{
+	position: absolute;
+	width: 1100px;
+	height: 63px;
+	left: -286px;
+	top: 2100px;
+	background: #F8251C;
+	border-radius: 8px;
+}
+.block__why__text__2{
+	position: absolute;
+	width: 700px;
+	height: 52px;
+	left: 480px;
+	top: 5px;
+	font-family: Proxima Soft;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 45px;
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+	color: #fff;
+}
+.sub{
+	background-image: url(images/Subtracteight.png);
+	position: absolute;
+	width: 206px;
+	height: 196px;
+	left: 200px;
+	top: 2302px;
+}
+.tht{
+	background-image: url(images/thrtee.png);
+	position: absolute;
+	width: 188px;
+	height: 196px;
+	left: 480px;
+	top: 2302px;
+}
+.seven{
+	background-image: url(images/seven.png);
+	position: absolute;
+	width: 196px;
+	height: 193px;
+	left: 760px;
+	top: 2302px;
+}
+.six{
+	background-image: url(images/six.png);
+	position: absolute;
+	width: 207px;
+	height: 192px;
+	left: 1030px;
+	top: 2302px;
+}
+.one__text{
+	position: absolute;
+	width: 200px;
+	height: 52px;
+	left: 190px;
+	top: 2521px;
+	font-family: arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 26px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #242424;
+}
+.two__text{
+	position: absolute;
+	width: 200px;
+	height: 52px;
+	left: 470px;
+	top: 2521px;
+	font-family: arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 26px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #242424;
+}
+.three__text{
+	position: absolute;
+	width: 200px;
+	height: 52px;
+	left: 750px;
+	top: 2521px;
+	font-family: arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 26px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #242424;
+}
+.fo__text{
+	position: absolute;
+	width: 200px;
+	height: 52px;
+	left: 1020px;
+	top: 2521px;
+	font-family: arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 26px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #242424;
+}
+.center__text{
+	position: absolute;
+	width: 545px;
+	height: 58px;
+	left: 440px;
+	top: 2648px;
+	font-family: Proxima Soft;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 120%;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #1B1B1B;
+}
+.footer__center{
+	position: absolute;
+	width: 1465px;
+	height: 225px;
+	left: -30px;
+	top: 2783px;
+	background: #F8251C;
+}
+.text__center__1{
+	position: absolute;
+	width: 1000px;
+	height: 69px;
+	left: 320px;
+	top: 40px;
+	font-family: arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 120%;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	text-transform: uppercase;		
+	color: #FFFFFF;
+}
+.button__logo__2{
+	position: absolute;
+	width: 154px;
+	height: 26px;
+	top: 2943px;
+	font-family: Proxima Soft;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 26px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #FFFFFF;
+	position: absolute;
+	width: 181px;
+	height: 42px;
+	left: 620px;
+	top: 2920px;
+	border-radius: 30px;
+	padding-left: 17px;
+	cursor: pointer;
+	background: #033373;
+}
+.big__img{
+	background-image: url(images/name.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 100%;
+	height: 858px;
+	left: -200px;
+	top: 3104px;
+}
+.programm{
+	background-image: url(images/programm.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 1600px;
+	height: 904px;
+	left: -240px;
+	top: 4087px;
+}
+.talent{
+	background-image: url(images/talentkids.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 1358px;
+	height: 1019px;
+	left: -200px;
+	top: 5074px;
+}
+.twoyou{
+	background-image: url(images/twoyou.png);
+	position: absolute;
+	width: 268px;
+	height: 235px;
+	left: 1000px;
+	top: 5201px;
+}
+.camera{
+	background-image: url(images/camera.png);
+	position: absolute;
+	width: 413px;
+	height: 365px;
+	left: 900px;
+	top: 5550px;
+}
+.nashi{
+	background-image: url(images/prepodovateli.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 1286px;
+	height: 61px;
+	left: -100px;
+	top: 6188px;
+}
+.photo{
+	background-image: url(images/photo.png);
+	position: absolute;
+	width: 1147px;
+	height: 401px;
+	left: 140px;
+	top: 6308px;
+}
+.deti{
+	background-image: url(images/deti.png);
+	position: absolute;
+	width: 682.5px;
+	height: 389px;
+	left: 100px;
+	top: 6799px;
+}
+.ycis{
+	background-image: url(images/ycis.png);
+	position: absolute;
+	width: 439px;
+	height: 230px;
+	left: 900px;
+	top: 6849px;
+}
+.kak{
+	background-image: url(images/kakzap.png);
+	position: absolute;
+	background-repeat: no-repeat;
+	width: 1292px;
+	height: 63px;
+	left: 0;
+	top: 7249px;
+}
+.bg__nav{
+	background-image: url(images/bgnav.png);
+	position: absolute;
+	width: 1639px;
+	height: 334px;
+	left: -200px;
+	top: 7365px;
+}
+.name{
+	position: relative;
+	border-radius: 10px;
+	margin-top: 50px;
+	width: 378px;
+	height: 47px;
+	left: 884px;
+	top: 10px;
+	background: #FFFFFF;
+	border: 3px solid #F8251C;
+}
+.phone{
+	position: relative;
+	border-radius: 10px;
+	width: 378px;
+	height: 47px;
+	left: 502px;
+	top: 80px;
+	background: #FFFFFF;
+	border: 3px solid #F8251C;
+}
+.email{
+	position: relative;
+	border-radius: 10px;
+	top: 150px;
+	width: 378px;
+	height: 47px;
+	left: 120px;
+	background: #FFFFFF;
+	border: 3px solid #F8251C;
+}
+.button__logo__3{
+	position: absolute;
+	width: 187px;
+	height: 42px;
+	left: 760px;
+	top: 7630px;
+	font-family: Proxima Soft;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #FFFFFF;
+	position: absolute;
+	border-radius: 30px;
+	padding-left: 40px;
+	cursor: pointer;
+	background: #033373;
+}
+.polycite{
+	background-image: url(images/polychite.png);
+	position: absolute;
+	width: 502px;
+	height: 253px;
+	left: 200px;
+	top: 7832px;
+}
+.nagrady{
+	background-image: url(images/nagradi.png);
+	position: absolute;
+	width: 550px;
+	height: 321px;
+	left: 800px;
+	top: 7824px;
+}
+.gde{
+	position: absolute;
+	width: 1293px;
+	height: 61px;
+	left: 0;
+	top: 8226px;
+}
+.map{
+	background-image: url(images/map.png);
+	position: absolute;
+	width: 100%;
+	height: 900px;
+	top: 8353px;
+	left: 0;
+	text-align: center;
+	background-size: cover;
+	background-position: center;
+}
+.footer{
+	background-image: url(images/footer.png);
+	position: absolute;
+	width: 1589px;
+	height: 193px;
+	left: -150px;
+	top: 9270px;
+}
+.instagram{
+	position: absolute;
+	cursor: pointer;
+	background-image: url(images/instagram.png);
+	background-repeat: no-repeat;
+	width: 40px;
+	height: 40px;
+	top: 9350px;
+	left: 980px;
+}
+.facebook{
+	position: absolute;
+	cursor: pointer;
+	background-image: url(images/facebook.png);
+	background-repeat: no-repeat;
+	width: 40px;
+	height: 40px;
+	top: 9350px;
+	left: 1065px;
+}
+.youtube{
+	position: absolute;
+	cursor: pointer;
+	background-image: url(images/youtubeicon.png);
+	background-repeat: no-repeat;
+	width: 40px;
+	height: 40px;
+	top: 9350px;
+	left: 1150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
